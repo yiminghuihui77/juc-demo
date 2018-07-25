@@ -1,5 +1,7 @@
 package com.minghui.juc.lock;
 
+import java.util.Iterator;
+
 /**
  * 阻塞队列接口
  *
@@ -14,4 +16,5 @@ public interface BlockingQueue<E> {
 
     int getSize();
 
+    Iterator<E> iterator();
 }
